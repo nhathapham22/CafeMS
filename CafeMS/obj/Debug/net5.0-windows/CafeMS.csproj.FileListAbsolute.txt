@@ -16,3 +16,4 @@ D:\C# .Net App\CafeMS\CafeMS\CafeMS\obj\Debug\net5.0-windows\CafeMS.dll
 D:\C# .Net App\CafeMS\CafeMS\CafeMS\obj\Debug\net5.0-windows\ref\CafeMS.dll
 D:\C# .Net App\CafeMS\CafeMS\CafeMS\obj\Debug\net5.0-windows\CafeMS.pdb
 D:\C# .Net App\CafeMS\CafeMS\CafeMS\obj\Debug\net5.0-windows\CafeMS.genruntimeconfig.cache
+D:\C# .Net App\CafeMS\CafeMS\CafeMS\obj\Debug\net5.0-windows\CafeMS.Properties.Resources.resources

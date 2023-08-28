@@ -76,9 +76,9 @@
             this.chkEggBites = new System.Windows.Forms.CheckBox();
             this.chkFries = new System.Windows.Forms.CheckBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblSvcCharge = new System.Windows.Forms.Label();
+            this.lblFoodCost = new System.Windows.Forms.Label();
+            this.lblDrinkCost = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -94,9 +94,9 @@
             this.toolStripButton8 = new System.Windows.Forms.ToolStripButton();
             this.rtbReceipt = new System.Windows.Forms.RichTextBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
+            this.lblSubTotal = new System.Windows.Forms.Label();
+            this.lblTax = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -580,9 +580,9 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.label9);
-            this.panel4.Controls.Add(this.label8);
-            this.panel4.Controls.Add(this.label7);
+            this.panel4.Controls.Add(this.lblSvcCharge);
+            this.panel4.Controls.Add(this.lblFoodCost);
+            this.panel4.Controls.Add(this.lblDrinkCost);
             this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.label4);
@@ -591,41 +591,42 @@
             this.panel4.Size = new System.Drawing.Size(491, 170);
             this.panel4.TabIndex = 1;
             // 
-            // label9
+            // lblSvcCharge
             // 
-            this.label9.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label9.Location = new System.Drawing.Point(256, 118);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(221, 45);
-            this.label9.TabIndex = 26;
-            this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblSvcCharge.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblSvcCharge.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblSvcCharge.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSvcCharge.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lblSvcCharge.Location = new System.Drawing.Point(256, 118);
+            this.lblSvcCharge.Name = "lblSvcCharge";
+            this.lblSvcCharge.Size = new System.Drawing.Size(221, 45);
+            this.lblSvcCharge.TabIndex = 26;
+            this.lblSvcCharge.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label8
+            // lblFoodCost
             // 
-            this.label8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label8.Location = new System.Drawing.Point(257, 69);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(221, 45);
-            this.label8.TabIndex = 25;
-            this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblFoodCost.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblFoodCost.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblFoodCost.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblFoodCost.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lblFoodCost.Location = new System.Drawing.Point(257, 69);
+            this.lblFoodCost.Name = "lblFoodCost";
+            this.lblFoodCost.Size = new System.Drawing.Size(221, 45);
+            this.lblFoodCost.TabIndex = 25;
+            this.lblFoodCost.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label7
+            // lblDrinkCost
             // 
-            this.label7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label7.Location = new System.Drawing.Point(257, 17);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(221, 45);
-            this.label7.TabIndex = 24;
-            this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblDrinkCost.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblDrinkCost.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblDrinkCost.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDrinkCost.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lblDrinkCost.Location = new System.Drawing.Point(257, 17);
+            this.lblDrinkCost.Name = "lblDrinkCost";
+            this.lblDrinkCost.Size = new System.Drawing.Size(221, 45);
+            this.lblDrinkCost.TabIndex = 24;
+            this.lblDrinkCost.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblDrinkCost.Click += new System.EventHandler(this.lblDrinkCost_Click);
             // 
             // label6
             // 
@@ -650,7 +651,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(221, 45);
             this.label5.TabIndex = 22;
-            this.label5.Text = "Cost of Cakes";
+            this.label5.Text = "Cost of Food";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label4
@@ -776,9 +777,9 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.label10);
-            this.panel6.Controls.Add(this.label11);
-            this.panel6.Controls.Add(this.label12);
+            this.panel6.Controls.Add(this.lblTotal);
+            this.panel6.Controls.Add(this.lblSubTotal);
+            this.panel6.Controls.Add(this.lblTax);
             this.panel6.Controls.Add(this.label13);
             this.panel6.Controls.Add(this.label14);
             this.panel6.Controls.Add(this.label15);
@@ -787,41 +788,41 @@
             this.panel6.Size = new System.Drawing.Size(514, 170);
             this.panel6.TabIndex = 1;
             // 
-            // label10
+            // lblTotal
             // 
-            this.label10.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label10.Location = new System.Drawing.Point(255, 118);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(221, 45);
-            this.label10.TabIndex = 32;
-            this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblTotal.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblTotal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblTotal.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTotal.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lblTotal.Location = new System.Drawing.Point(255, 118);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(221, 45);
+            this.lblTotal.TabIndex = 32;
+            this.lblTotal.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label11
+            // lblSubTotal
             // 
-            this.label11.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label11.Location = new System.Drawing.Point(256, 69);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(221, 45);
-            this.label11.TabIndex = 31;
-            this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblSubTotal.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblSubTotal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblSubTotal.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSubTotal.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lblSubTotal.Location = new System.Drawing.Point(256, 69);
+            this.lblSubTotal.Name = "lblSubTotal";
+            this.lblSubTotal.Size = new System.Drawing.Size(221, 45);
+            this.lblSubTotal.TabIndex = 31;
+            this.lblSubTotal.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label12
+            // lblTax
             // 
-            this.label12.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label12.Location = new System.Drawing.Point(256, 17);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(221, 45);
-            this.label12.TabIndex = 30;
-            this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblTax.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblTax.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblTax.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTax.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lblTax.Location = new System.Drawing.Point(256, 17);
+            this.lblTax.Name = "lblTax";
+            this.lblTax.Size = new System.Drawing.Size(221, 45);
+            this.lblTax.TabIndex = 30;
+            this.lblTax.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label13
             // 
@@ -908,6 +909,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Total";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -994,12 +996,12 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblSvcCharge;
+        private System.Windows.Forms.Label lblFoodCost;
+        private System.Windows.Forms.Label lblDrinkCost;
+        private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.Label lblSubTotal;
+        private System.Windows.Forms.Label lblTax;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
