@@ -34,6 +34,8 @@ namespace CafeMS
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            // declaration of food and drink prices
             double taxRate = 0.11;
             double LattePrice = 1.20;
             double BlackCoffeePrice = 1.0;
@@ -56,6 +58,8 @@ namespace CafeMS
             double ChocolateCakePrice = 1.5;
             double RedVelvetCakePrice = 1.5;
 
+
+            //convert into 
             int LatteQty = Convert.ToInt32(txtLatte.Text);
             int BlackCoffeeQty = Convert.ToInt32(txtBlackCoffee.Text);
             int ExpressoQty = Convert.ToInt32(txtExpresso.Text);
@@ -107,6 +111,10 @@ namespace CafeMS
             lblTax.Text = Convert.ToString((drinkCosts + foodCosts + svcCharge) * tax);
 
             lblTotal.Text = Convert.ToString((total));
+
+
+
+
         }
 
 

@@ -626,7 +626,7 @@
             this.lblDrinkCost.Size = new System.Drawing.Size(221, 45);
             this.lblDrinkCost.TabIndex = 24;
             this.lblDrinkCost.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblDrinkCost.Click += new System.EventHandler(this.lblDrinkCost_Click);
+            //this.lblDrinkCost.Click += new System.EventHandler(this.lblDrinkCost_Click);
             // 
             // label6
             // 
