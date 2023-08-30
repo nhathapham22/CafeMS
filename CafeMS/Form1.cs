@@ -97,7 +97,7 @@ namespace CafeMS
         }
     
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnTotal_Click(object sender, EventArgs e)
         {
 
             // declaration of food and drink prices
@@ -446,5 +446,27 @@ namespace CafeMS
                 txtRedVelvetCake.Text = "0";
             }
         }
+
+        private void btnReceipt_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void rtbReceipt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

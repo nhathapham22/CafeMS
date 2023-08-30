@@ -101,10 +101,10 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.btnReceipt = new System.Windows.Forms.Button();
+            this.btnTotal = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -231,6 +231,7 @@
             this.txtLatte.Name = "txtLatte";
             this.txtLatte.Size = new System.Drawing.Size(150, 31);
             this.txtLatte.TabIndex = 21;
+            //this.txtLatte.TextChanged += new System.EventHandler(this.txtLatte_TextChanged);
             // 
             // label3
             // 
@@ -790,6 +791,7 @@
             this.rtbReceipt.Size = new System.Drawing.Size(430, 367);
             this.rtbReceipt.TabIndex = 0;
             this.rtbReceipt.Text = "";
+            this.rtbReceipt.TextChanged += new System.EventHandler(this.rtbReceipt_TextChanged);
             // 
             // panel6
             // 
@@ -881,51 +883,54 @@
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.button4);
-            this.panel7.Controls.Add(this.button3);
-            this.panel7.Controls.Add(this.button2);
-            this.panel7.Controls.Add(this.button1);
+            this.panel7.Controls.Add(this.btnExit);
+            this.panel7.Controls.Add(this.btnReset);
+            this.panel7.Controls.Add(this.btnReceipt);
+            this.panel7.Controls.Add(this.btnTotal);
             this.panel7.Location = new System.Drawing.Point(1020, 613);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(453, 170);
             this.panel7.TabIndex = 1;
             // 
-            // button4
+            // btnExit
             // 
-            this.button4.Location = new System.Drawing.Point(352, 68);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(89, 34);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Exit";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnExit.Location = new System.Drawing.Point(352, 68);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(89, 34);
+            this.btnExit.TabIndex = 3;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // button3
+            // btnReset
             // 
-            this.button3.Location = new System.Drawing.Point(239, 68);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(89, 34);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Reset";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnReset.Location = new System.Drawing.Point(239, 68);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(89, 34);
+            this.btnReset.TabIndex = 2;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
-            // button2
+            // btnReceipt
             // 
-            this.button2.Location = new System.Drawing.Point(125, 68);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(89, 34);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Receipt";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnReceipt.Location = new System.Drawing.Point(125, 68);
+            this.btnReceipt.Name = "btnReceipt";
+            this.btnReceipt.Size = new System.Drawing.Size(89, 34);
+            this.btnReceipt.TabIndex = 1;
+            this.btnReceipt.Text = "Receipt";
+            this.btnReceipt.UseVisualStyleBackColor = true;
+            this.btnReceipt.Click += new System.EventHandler(this.btnReceipt_Click);
             // 
-            // button1
+            // btnTotal
             // 
-            this.button1.Location = new System.Drawing.Point(11, 68);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 34);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Total";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnTotal.Location = new System.Drawing.Point(11, 68);
+            this.btnTotal.Name = "btnTotal";
+            this.btnTotal.Size = new System.Drawing.Size(89, 34);
+            this.btnTotal.TabIndex = 0;
+            this.btnTotal.Text = "Total";
+            this.btnTotal.UseVisualStyleBackColor = true;
+            this.btnTotal.Click += new System.EventHandler(this.btnTotal_Click);
             // 
             // Form1
             // 
@@ -1024,10 +1029,10 @@
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.RichTextBox rtbReceipt;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Button btnReceipt;
+        private System.Windows.Forms.Button btnTotal;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.ToolStripButton toolStripButton4;
