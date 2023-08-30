@@ -321,7 +321,7 @@
             this.chkExpresso.TabIndex = 3;
             this.chkExpresso.Text = "Expresso";
             this.chkExpresso.UseVisualStyleBackColor = true;
-            this.chkExpresso.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
+            //this.chkExpresso.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
             // chkOrangeJuice
             // 
@@ -452,7 +452,7 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Food";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            //this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // chkRedVelvetCake
             // 
@@ -702,7 +702,7 @@
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(34, 28);
             this.toolStripButton1.Text = "toolStripButton1";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            //this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // toolStripButton2
             // 

@@ -15,22 +15,41 @@ namespace CafeMS
         public Form1()
         {
             InitializeComponent();
+            this.Load += Form1_Load;
         }
 
-        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
+            // Set the default value for the TextBox
+            txtLatte.Text = "0";
+            txtBlackCoffee.Text ="0";
+            txtExpresso.Text = "0";
+            txtOrangeJuice.Text = "0";
+            txtGreenTea.Text = "0";
+            txtMilkTea.Text = "0";
+            txtCappuchino.Text = "0";
+            txtHotChocolate.Text = "0";
+            txtWater.Text = "0";
+            txtMacchiato.Text = "0";
+            txtFries.Text = "0";
+            txtEggBites.Text = "0";
+            txtFishnChips.Text = "0";
+            txtOmmelette.Text = "0";
+            txtInstantNoodles.Text = "0";
+            txtCrssant.Text = "0";
+            txtCheeseCake.Text = "0";
+            txtRainbowCake.Text = "0";
+            txtChocolateCake.Text = "0";
+            txtRedVelvetCake.Text = "0";
 
+            lblDrinkCost.Text = "0";
+            lblFoodCost.Text = "0";
+            lblSvcCharge.Text = "1.75";
+            lblSubTotal.Text = "0";
+            lblTax.Text = "0";
+            lblTotal.Text = "0";
         }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void toolStripButton1_Click(object sender, EventArgs e)
-        {
-
-        }
+    
 
         private void button1_Click(object sender, EventArgs e)
         {
