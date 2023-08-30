@@ -127,11 +127,15 @@ namespace CafeMS
 
             lblSubTotal.Text = Convert.ToString(drinkCosts + foodCosts + svcCharge);
 
-            lblTax.Text = Convert.ToString((drinkCosts + foodCosts + svcCharge) * tax);
+            lblTax.Text = Convert.ToString(tax);
 
             lblTotal.Text = Convert.ToString((total));
 
-
+            lblSubTotal.Text = String.Format("{0:C}", subTotal);
+            lblTotal.Text = String.Format("{0:C}", total);
+            lblDrinkCost.Text = String.Format("{0:C}", drinkCosts);
+            lblFoodCost.Text = String.Format("{0:C}", foodCosts);
+            lblTax.Text = String.Format("{0:C}", tax);
 
 
         }
