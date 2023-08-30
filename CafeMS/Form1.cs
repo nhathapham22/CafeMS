@@ -48,6 +48,52 @@ namespace CafeMS
             lblSubTotal.Text = "0";
             lblTax.Text = "0";
             lblTotal.Text = "0";
+
+            txtLatte.Enabled = false;
+            txtExpresso.Enabled = false;
+            txtBlackCoffee.Enabled = false;
+            txtOrangeJuice.Enabled = false;
+            txtGreenTea.Enabled = false;
+            txtMilkTea.Enabled = false;
+            txtCappuchino.Enabled = false;
+            txtHotChocolate.Enabled = false;
+            txtWater.Enabled = false;
+            txtMacchiato.Enabled = false;  
+            txtFries.Enabled = false;
+            txtEggBites.Enabled = false;
+            txtFishnChips.Enabled = false;
+            txtOmmelette.Enabled = false;
+            txtInstantNoodles.Enabled = false;
+            txtCrssant.Enabled = false;
+            txtCheeseCake.Enabled = false;
+            txtRainbowCake.Enabled = false;
+            txtChocolateCake.Enabled = false;
+            txtRedVelvetCake.Enabled = false;
+
+            //chkLatte.Enabled = false;
+            //chkExpresso.Enabled = false;
+            //chkBlackCoffee.Enabled = false;
+            //chkOrangeJuice.Enabled = false;
+            //chkGreenTea.Enabled = false;
+            //chkMilkTea.Enabled = false;
+            //chkCappuchino.Enabled = false;
+            //chkHotChocolate.Enabled = false;
+            //chkWater.Enabled = false;
+            //chkMacchiato.Enabled = false;
+            //chkFries.Enabled = false;
+            //chkEggBites.Enabled = false;
+            //chkFishnChips.Enabled = false;
+            //chkOmmelette.Enabled = false;
+            //chkInstantNoodles.Enabled = false;
+            //chkCrssant.Enabled = false;
+            //chkCheeseCake.Enabled = false;
+            //chkRainbowCake.Enabled = false;
+            //chkChocolateCake.Enabled = false;
+            //chkRedVelvetCake.Enabled = false;
+
+
+
+
         }
     
 
@@ -140,6 +186,265 @@ namespace CafeMS
 
         }
 
+        private void chkLatte_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkLatte.Checked == true)
+            {
+                txtLatte.Enabled = true;
+            }
+            else
+            {
+                txtLatte.Enabled = false;
+                txtLatte.Text = "0";
+            }
+        }
 
+        private void chkBlackCoffee_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkBlackCoffee.Checked == true)
+            {
+                txtBlackCoffee.Enabled = true;
+            }
+            else
+            {
+                txtBlackCoffee.Enabled = false;
+                txtBlackCoffee.Text = "0";
+            }
+
+        }
+
+        private void chkExpresso_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkExpresso.Checked == true)
+            {
+                txtExpresso.Enabled = true;
+            }
+            else
+            {
+                txtExpresso.Enabled = false;
+                txtExpresso.Text = "0";
+            }
+        }
+
+        private void chkOrangeJuice_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkOrangeJuice.Checked == true)
+            {
+                txtOrangeJuice.Enabled = true;
+            }
+            else
+            {
+                txtOrangeJuice.Enabled = false;
+                txtOrangeJuice.Text = "0";
+            }
+        }
+
+        private void chkGreenTea_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkGreenTea.Checked == true)
+            {
+                txtGreenTea.Enabled = true;
+            }
+            else
+            {
+                txtGreenTea.Enabled = false;
+                txtGreenTea.Text = "0";
+            }
+        }
+
+        private void chkMilkTea_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkMilkTea.Checked == true)
+            {
+                txtMilkTea.Enabled = true;
+            }
+            else
+            {
+                txtMilkTea.Enabled = false;
+                txtMilkTea.Text = "0";
+            }
+        }
+
+        private void chkCappuchino_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkCappuchino.Checked == true)
+            {
+                txtCappuchino.Enabled = true;
+            }
+            else
+            {
+                txtCappuchino.Enabled = false;
+                txtCappuchino.Text = "0";
+            }
+        }
+
+        private void chkHotChocolate_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkHotChocolate.Checked == true)
+            {
+                txtHotChocolate.Enabled = true;
+            }
+            else
+            {
+                txtHotChocolate.Enabled = false;
+                txtHotChocolate.Text = "0";
+            }
+        }
+
+        private void chkWater_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkWater.Checked == true)
+            {
+                txtWater.Enabled = true;
+            }
+            else
+            {
+                txtWater.Enabled = false;
+                txtWater.Text = "0";
+            }
+        }
+
+        private void chkMacchiato_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkMacchiato.Checked == true)
+            {
+                txtMacchiato.Enabled = true;
+            }
+            else
+            {
+                txtMacchiato.Enabled = false;
+                txtMacchiato.Text = "0";
+            }
+        }
+
+        private void chkFries_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkFries.Checked == true)
+            {
+                txtFries.Enabled = true;
+            }
+            else
+            {
+                txtFries.Enabled = false;
+                txtFries.Text = "0";
+            }
+        }
+
+        private void chkEggBites_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkEggBites.Checked == true)
+            {
+                txtEggBites.Enabled = true;
+            }
+            else
+            {
+                txtEggBites.Enabled = false;
+                txtEggBites.Text = "0";
+            }
+        }
+
+        private void chkFishnChips_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkFishnChips.Checked == true)
+            {
+                txtFishnChips.Enabled = true;
+            }
+            else
+            {
+                txtFishnChips.Enabled = false;
+                txtFishnChips.Text = "0";
+            }
+        }
+
+        private void chkOmmelette_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkOmmelette.Checked == true)
+            {
+                txtOmmelette.Enabled = true;
+            }
+            else
+            {
+                txtOmmelette.Enabled = false;
+                txtOmmelette.Text = "0";
+            }
+        }
+
+        private void chkInstantNoodles_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkInstantNoodles.Checked == true)
+            {
+                txtInstantNoodles.Enabled = true;
+            }
+            else
+            {
+                txtInstantNoodles.Enabled = false;
+                txtInstantNoodles.Text = "0";
+            }
+        }
+
+        private void chkCrssant_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkCrssant.Checked == true)
+            {
+                txtCrssant.Enabled = true;
+            }
+            else
+            {
+                txtCrssant.Enabled = false;
+                txtCrssant.Text = "0";
+            }
+        }
+
+        private void chkCheeseCake_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkCheeseCake.Checked == true)
+            {
+                txtCheeseCake.Enabled = true;
+            }
+            else
+            {
+                txtCheeseCake.Enabled = false;
+                txtCheeseCake.Text = "0";
+            }
+        }
+
+        private void chkRainbowCake_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkRainbowCake.Checked == true)
+            {
+                txtRainbowCake.Enabled = true;
+            }
+            else
+            {
+                txtRainbowCake.Enabled = false;
+                txtRainbowCake.Text = "0";
+            }
+        }
+
+        private void chkChocolateCake_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkChocolateCake.Checked == true)
+            {
+                txtChocolateCake.Enabled = true;
+            }
+            else
+            {
+                txtChocolateCake.Enabled = false;
+                txtChocolateCake.Text = "0";
+            }
+        }
+
+        private void chkRedVelvetCake_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkRedVelvetCake.Checked == true)
+            {
+                txtRedVelvetCake.Enabled = true;
+            }
+            else
+            {
+                txtRedVelvetCake.Enabled = false;
+                txtRedVelvetCake.Text = "0";
+            }
+        }
     }
 }

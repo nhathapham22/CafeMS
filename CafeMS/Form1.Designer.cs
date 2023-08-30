@@ -255,6 +255,7 @@
             this.chkMacchiato.TabIndex = 9;
             this.chkMacchiato.Text = "Macchiato";
             this.chkMacchiato.UseVisualStyleBackColor = true;
+            this.chkMacchiato.CheckedChanged += new System.EventHandler(this.chkMacchiato_CheckedChanged);
             // 
             // chkHotChocolate
             // 
@@ -266,6 +267,7 @@
             this.chkHotChocolate.TabIndex = 8;
             this.chkHotChocolate.Text = "Hot Chocolate";
             this.chkHotChocolate.UseVisualStyleBackColor = true;
+            this.chkHotChocolate.CheckedChanged += new System.EventHandler(this.chkHotChocolate_CheckedChanged);
             // 
             // chkWater
             // 
@@ -277,6 +279,7 @@
             this.chkWater.TabIndex = 7;
             this.chkWater.Text = "Water";
             this.chkWater.UseVisualStyleBackColor = true;
+            this.chkWater.CheckedChanged += new System.EventHandler(this.chkWater_CheckedChanged);
             // 
             // chkMilkTea
             // 
@@ -288,6 +291,7 @@
             this.chkMilkTea.TabIndex = 6;
             this.chkMilkTea.Text = "Milk Tea";
             this.chkMilkTea.UseVisualStyleBackColor = true;
+            this.chkMilkTea.CheckedChanged += new System.EventHandler(this.chkMilkTea_CheckedChanged);
             // 
             // chkCappuchino
             // 
@@ -299,6 +303,7 @@
             this.chkCappuchino.TabIndex = 5;
             this.chkCappuchino.Text = "Cappuchino";
             this.chkCappuchino.UseVisualStyleBackColor = true;
+            this.chkCappuchino.CheckedChanged += new System.EventHandler(this.chkCappuchino_CheckedChanged);
             // 
             // chkGreenTea
             // 
@@ -310,6 +315,7 @@
             this.chkGreenTea.TabIndex = 4;
             this.chkGreenTea.Text = "Green Tea";
             this.chkGreenTea.UseVisualStyleBackColor = true;
+            this.chkGreenTea.CheckedChanged += new System.EventHandler(this.chkGreenTea_CheckedChanged);
             // 
             // chkExpresso
             // 
@@ -321,7 +327,7 @@
             this.chkExpresso.TabIndex = 3;
             this.chkExpresso.Text = "Expresso";
             this.chkExpresso.UseVisualStyleBackColor = true;
-            //this.chkExpresso.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
+            this.chkExpresso.CheckedChanged += new System.EventHandler(this.chkExpresso_CheckedChanged);
             // 
             // chkOrangeJuice
             // 
@@ -333,6 +339,7 @@
             this.chkOrangeJuice.TabIndex = 2;
             this.chkOrangeJuice.Text = "Orange Juice";
             this.chkOrangeJuice.UseVisualStyleBackColor = true;
+            this.chkOrangeJuice.CheckedChanged += new System.EventHandler(this.chkOrangeJuice_CheckedChanged);
             // 
             // chkBlackCoffee
             // 
@@ -344,6 +351,7 @@
             this.chkBlackCoffee.TabIndex = 1;
             this.chkBlackCoffee.Text = "Black Coffee";
             this.chkBlackCoffee.UseVisualStyleBackColor = true;
+            this.chkBlackCoffee.CheckedChanged += new System.EventHandler(this.chkBlackCoffee_CheckedChanged);
             // 
             // chkLatte
             // 
@@ -355,6 +363,7 @@
             this.chkLatte.TabIndex = 0;
             this.chkLatte.Text = "Latte";
             this.chkLatte.UseVisualStyleBackColor = true;
+            this.chkLatte.CheckedChanged += new System.EventHandler(this.chkLatte_CheckedChanged);
             // 
             // panel3
             // 
@@ -452,7 +461,6 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Food";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            //this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // chkRedVelvetCake
             // 
@@ -464,6 +472,7 @@
             this.chkRedVelvetCake.TabIndex = 19;
             this.chkRedVelvetCake.Text = "Red Velvet Cake";
             this.chkRedVelvetCake.UseVisualStyleBackColor = true;
+            this.chkRedVelvetCake.CheckedChanged += new System.EventHandler(this.chkRedVelvetCake_CheckedChanged);
             // 
             // chkRainbowCake
             // 
@@ -475,6 +484,7 @@
             this.chkRainbowCake.TabIndex = 18;
             this.chkRainbowCake.Text = "Rainbow Cake";
             this.chkRainbowCake.UseVisualStyleBackColor = true;
+            this.chkRainbowCake.CheckedChanged += new System.EventHandler(this.chkRainbowCake_CheckedChanged);
             // 
             // chkChocolateCake
             // 
@@ -486,6 +496,7 @@
             this.chkChocolateCake.TabIndex = 17;
             this.chkChocolateCake.Text = "Chocolate Cake";
             this.chkChocolateCake.UseVisualStyleBackColor = true;
+            this.chkChocolateCake.CheckedChanged += new System.EventHandler(this.chkChocolateCake_CheckedChanged);
             // 
             // chkCrssant
             // 
@@ -497,6 +508,7 @@
             this.chkCrssant.TabIndex = 16;
             this.chkCrssant.Text = "Crssant";
             this.chkCrssant.UseVisualStyleBackColor = true;
+            this.chkCrssant.CheckedChanged += new System.EventHandler(this.chkCrssant_CheckedChanged);
             // 
             // chkCheeseCake
             // 
@@ -508,6 +520,7 @@
             this.chkCheeseCake.TabIndex = 15;
             this.chkCheeseCake.Text = "Cheese Cake";
             this.chkCheeseCake.UseVisualStyleBackColor = true;
+            this.chkCheeseCake.CheckedChanged += new System.EventHandler(this.chkCheeseCake_CheckedChanged);
             // 
             // txtEggBites
             // 
@@ -533,6 +546,7 @@
             this.chkInstantNoodles.TabIndex = 14;
             this.chkInstantNoodles.Text = "Instant Noodles";
             this.chkInstantNoodles.UseVisualStyleBackColor = true;
+            this.chkInstantNoodles.CheckedChanged += new System.EventHandler(this.chkInstantNoodles_CheckedChanged);
             // 
             // chkFishnChips
             // 
@@ -544,6 +558,7 @@
             this.chkFishnChips.TabIndex = 13;
             this.chkFishnChips.Text = "Fish n Chips";
             this.chkFishnChips.UseVisualStyleBackColor = true;
+            this.chkFishnChips.CheckedChanged += new System.EventHandler(this.chkFishnChips_CheckedChanged);
             // 
             // chkOmmelette
             // 
@@ -555,6 +570,7 @@
             this.chkOmmelette.TabIndex = 12;
             this.chkOmmelette.Text = "Ommelette";
             this.chkOmmelette.UseVisualStyleBackColor = true;
+            this.chkOmmelette.CheckedChanged += new System.EventHandler(this.chkOmmelette_CheckedChanged);
             // 
             // chkEggBites
             // 
@@ -566,6 +582,7 @@
             this.chkEggBites.TabIndex = 11;
             this.chkEggBites.Text = "Egg Bites";
             this.chkEggBites.UseVisualStyleBackColor = true;
+            this.chkEggBites.CheckedChanged += new System.EventHandler(this.chkEggBites_CheckedChanged);
             // 
             // chkFries
             // 
@@ -577,6 +594,7 @@
             this.chkFries.TabIndex = 10;
             this.chkFries.Text = "Fries";
             this.chkFries.UseVisualStyleBackColor = true;
+            this.chkFries.CheckedChanged += new System.EventHandler(this.chkFries_CheckedChanged);
             // 
             // panel4
             // 
@@ -626,7 +644,6 @@
             this.lblDrinkCost.Size = new System.Drawing.Size(221, 45);
             this.lblDrinkCost.TabIndex = 24;
             this.lblDrinkCost.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            //this.lblDrinkCost.Click += new System.EventHandler(this.lblDrinkCost_Click);
             // 
             // label6
             // 
@@ -702,7 +719,6 @@
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(34, 28);
             this.toolStripButton1.Text = "toolStripButton1";
-            //this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // toolStripButton2
             // 
