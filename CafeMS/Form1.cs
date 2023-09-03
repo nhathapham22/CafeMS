@@ -449,7 +449,39 @@ namespace CafeMS
 
         private void btnReceipt_Click(object sender, EventArgs e)
         {
+            rtbReceipt.Clear();
 
+            rtbReceipt.AppendText("-------------------------------------------------------" + Environment.NewLine);
+            rtbReceipt.AppendText("\t\t" + "My Cafe" + Environment.NewLine);
+            rtbReceipt.AppendText("-------------------------------------------------------" + Environment.NewLine);
+            rtbReceipt.AppendText("Latte \t\t\t\t" + txtLatte.Text + Environment.NewLine);
+            rtbReceipt.AppendText("Black CF \t\t\t" + txtBlackCoffee.Text + Environment.NewLine);
+            rtbReceipt.AppendText("Expresso \t\t\t\t" + txtExpresso.Text + Environment.NewLine);
+            rtbReceipt.AppendText("Orange Juice \t\t\t" + txtOrangeJuice.Text + Environment.NewLine);
+            rtbReceipt.AppendText("Green Tea \t\t\t" + txtGreenTea.Text + Environment.NewLine);
+            rtbReceipt.AppendText("Milk Tea \t\t\t" + txtMilkTea.Text + Environment.NewLine);
+            rtbReceipt.AppendText("Cappuchino \t\t\t" + txtCappuchino.Text + Environment.NewLine);
+            rtbReceipt.AppendText("Hot Chocolate \t\t\t" + txtHotChocolate.Text + Environment.NewLine);
+            rtbReceipt.AppendText("Water \t\t" + txtWater.Text + Environment.NewLine);
+            rtbReceipt.AppendText("Macchiato \t\t" + txtMacchiato.Text + Environment.NewLine);
+            rtbReceipt.AppendText("Fries \t\t" + txtFries.Text + Environment.NewLine);
+            rtbReceipt.AppendText("Egg Bites \t\t" + txtEggBites.Text + Environment.NewLine);
+            rtbReceipt.AppendText("Fish and Chips \t\t" + txtFishnChips.Text + Environment.NewLine);
+            rtbReceipt.AppendText("Ommelette \t\t\t" + txtOmmelette.Text + Environment.NewLine);
+            rtbReceipt.AppendText("Instant Noodles \t\t\t" + txtInstantNoodles.Text + Environment.NewLine);
+            rtbReceipt.AppendText("Crssant \t\t\t" + txtCrssant.Text + Environment.NewLine);
+            rtbReceipt.AppendText("Cheese Cake \t\t\t" + txtCheeseCake.Text + Environment.NewLine);
+            rtbReceipt.AppendText("Rainbow Cake \t\t\t" + txtRainbowCake.Text + Environment.NewLine);
+            rtbReceipt.AppendText("Chocolate Cake \t\t\t" + txtChocolateCake.Text + Environment.NewLine);
+            rtbReceipt.AppendText("Red Velvet Cake \t\t\t" + txtRedVelvetCake.Text + Environment.NewLine);
+            rtbReceipt.AppendText("-------------------------------------------------------------" + Environment.NewLine);
+            rtbReceipt.AppendText("Service Charge \t\t" + lblSvcCharge.Text + Environment.NewLine);
+            rtbReceipt.AppendText("-------------------------------------------------------------" + Environment.NewLine);
+            rtbReceipt.AppendText("Tax \t\t\t\t" + lblTax.Text + Environment.NewLine);
+            rtbReceipt.AppendText("Sub Total \t\t\t" + lblSubTotal.Text + Environment.NewLine);
+            rtbReceipt.AppendText("Total Cost \t\t\t" + lblTotal.Text + Environment.NewLine);
+            rtbReceipt.AppendText("-------------------------------------------------------------" + Environment.NewLine);
+            // rtbReceipt.AppendText(lblTimer.Text + "\t" + lblDate.Text);
         }
 
         private void btnReset_Click(object sender, EventArgs e)
@@ -467,6 +499,8 @@ namespace CafeMS
 
         }
 
-        
+      
+
+
     }
 }

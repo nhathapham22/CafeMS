@@ -63,6 +63,8 @@ namespace CafeMS
             double Fries, double EggBites, double FishnChips, double Ommelette, double InstantNoodles,
             double Crssant, double CheeseCake, double RainbowCake, double ChocolateCake, double RedVelvetCake)
         {
+
+            // Initialize fields with the provided quantities
             newLatte = Latte;
             newBlackCoffee = BlackCoffee;
             newExpresso = Expresso;
@@ -84,8 +86,6 @@ namespace CafeMS
             newRainbowCake = RainbowCake;
             newChocolateCake = ChocolateCake;
             newRedVelvetCake = RedVelvetCake;
-
-
 
         }
 
