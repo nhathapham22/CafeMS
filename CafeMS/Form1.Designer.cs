@@ -88,9 +88,6 @@
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolBtnPrint = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton8 = new System.Windows.Forms.ToolStripButton();
             this.rtbReceipt = new System.Windows.Forms.RichTextBox();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -161,7 +158,7 @@
             this.panel2.Controls.Add(this.chkLatte);
             this.panel2.Location = new System.Drawing.Point(3, 168);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(491, 439);
+            this.panel2.Size = new System.Drawing.Size(468, 439);
             this.panel2.TabIndex = 1;
             // 
             // txtMacchiato
@@ -392,7 +389,7 @@
             this.panel3.Controls.Add(this.chkFries);
             this.panel3.Location = new System.Drawing.Point(500, 168);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(514, 439);
+            this.panel3.Size = new System.Drawing.Size(461, 439);
             this.panel3.TabIndex = 1;
             // 
             // txtRedVelvetCake
@@ -690,9 +687,9 @@
             // 
             this.panel5.Controls.Add(this.toolStrip1);
             this.panel5.Controls.Add(this.rtbReceipt);
-            this.panel5.Location = new System.Drawing.Point(1020, 168);
+            this.panel5.Location = new System.Drawing.Point(967, 168);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(453, 439);
+            this.panel5.Size = new System.Drawing.Size(506, 439);
             this.panel5.TabIndex = 1;
             // 
             // toolStrip1
@@ -703,13 +700,10 @@
             this.toolStripButton2,
             this.toolStripButton3,
             this.toolBtnPrint,
-            this.toolStripButton5,
-            this.toolStripButton6,
-            this.toolStripButton7,
             this.toolStripButton8});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(453, 33);
+            this.toolStrip1.Size = new System.Drawing.Size(506, 33);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -720,7 +714,8 @@
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(34, 28);
-            this.toolStripButton1.Text = "toolStripButton1";
+            this.toolStripButton1.Text = "New";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // toolStripButton2
             // 
@@ -730,6 +725,7 @@
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Size = new System.Drawing.Size(34, 28);
             this.toolStripButton2.Text = "toolStripButton2";
+            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
             // toolStripButton3
             // 
@@ -739,6 +735,7 @@
             this.toolStripButton3.Name = "toolStripButton3";
             this.toolStripButton3.Size = new System.Drawing.Size(34, 28);
             this.toolStripButton3.Text = "toolStripButton3";
+            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
             // toolBtnPrint
             // 
@@ -750,33 +747,6 @@
             this.toolBtnPrint.Text = "Print";
             this.toolBtnPrint.Click += new System.EventHandler(this.toolBtnPrint_Click);
             // 
-            // toolStripButton5
-            // 
-            this.toolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
-            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton5.Name = "toolStripButton5";
-            this.toolStripButton5.Size = new System.Drawing.Size(34, 28);
-            this.toolStripButton5.Text = "toolStripButton5";
-            // 
-            // toolStripButton6
-            // 
-            this.toolStripButton6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton6.Image")));
-            this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton6.Name = "toolStripButton6";
-            this.toolStripButton6.Size = new System.Drawing.Size(34, 28);
-            this.toolStripButton6.Text = "toolStripButton6";
-            // 
-            // toolStripButton7
-            // 
-            this.toolStripButton7.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton7.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton7.Image")));
-            this.toolStripButton7.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton7.Name = "toolStripButton7";
-            this.toolStripButton7.Size = new System.Drawing.Size(34, 28);
-            this.toolStripButton7.Text = "toolStripButton7";
-            // 
             // toolStripButton8
             // 
             this.toolStripButton8.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -785,12 +755,13 @@
             this.toolStripButton8.Name = "toolStripButton8";
             this.toolStripButton8.Size = new System.Drawing.Size(34, 28);
             this.toolStripButton8.Text = "toolStripButton8";
+            this.toolStripButton8.Click += new System.EventHandler(this.toolStripButton8_Click);
             // 
             // rtbReceipt
             // 
             this.rtbReceipt.Location = new System.Drawing.Point(11, 57);
             this.rtbReceipt.Name = "rtbReceipt";
-            this.rtbReceipt.Size = new System.Drawing.Size(430, 367);
+            this.rtbReceipt.Size = new System.Drawing.Size(483, 367);
             this.rtbReceipt.TabIndex = 0;
             this.rtbReceipt.Text = "";
             this.rtbReceipt.TextChanged += new System.EventHandler(this.rtbReceipt_TextChanged);
@@ -805,7 +776,7 @@
             this.panel6.Controls.Add(this.label15);
             this.panel6.Location = new System.Drawing.Point(500, 613);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(514, 170);
+            this.panel6.Size = new System.Drawing.Size(461, 170);
             this.panel6.TabIndex = 1;
             // 
             // lblTotal
@@ -816,7 +787,7 @@
             this.lblTotal.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lblTotal.Location = new System.Drawing.Point(255, 118);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(221, 45);
+            this.lblTotal.Size = new System.Drawing.Size(162, 45);
             this.lblTotal.TabIndex = 32;
             this.lblTotal.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -828,7 +799,7 @@
             this.lblSubTotal.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lblSubTotal.Location = new System.Drawing.Point(256, 69);
             this.lblSubTotal.Name = "lblSubTotal";
-            this.lblSubTotal.Size = new System.Drawing.Size(221, 45);
+            this.lblSubTotal.Size = new System.Drawing.Size(161, 45);
             this.lblSubTotal.TabIndex = 31;
             this.lblSubTotal.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -840,7 +811,7 @@
             this.lblTax.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lblTax.Location = new System.Drawing.Point(256, 17);
             this.lblTax.Name = "lblTax";
-            this.lblTax.Size = new System.Drawing.Size(221, 45);
+            this.lblTax.Size = new System.Drawing.Size(161, 45);
             this.lblTax.TabIndex = 30;
             this.lblTax.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -889,14 +860,14 @@
             this.panel7.Controls.Add(this.btnReset);
             this.panel7.Controls.Add(this.btnReceipt);
             this.panel7.Controls.Add(this.btnTotal);
-            this.panel7.Location = new System.Drawing.Point(1020, 613);
+            this.panel7.Location = new System.Drawing.Point(967, 613);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(453, 170);
+            this.panel7.Size = new System.Drawing.Size(506, 170);
             this.panel7.TabIndex = 1;
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(352, 68);
+            this.btnExit.Location = new System.Drawing.Point(379, 69);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(89, 34);
             this.btnExit.TabIndex = 3;
@@ -906,7 +877,7 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(239, 68);
+            this.btnReset.Location = new System.Drawing.Point(266, 69);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(89, 34);
             this.btnReset.TabIndex = 2;
@@ -916,7 +887,7 @@
             // 
             // btnReceipt
             // 
-            this.btnReceipt.Location = new System.Drawing.Point(125, 68);
+            this.btnReceipt.Location = new System.Drawing.Point(152, 69);
             this.btnReceipt.Name = "btnReceipt";
             this.btnReceipt.Size = new System.Drawing.Size(89, 34);
             this.btnReceipt.TabIndex = 1;
@@ -926,7 +897,7 @@
             // 
             // btnTotal
             // 
-            this.btnTotal.Location = new System.Drawing.Point(11, 68);
+            this.btnTotal.Location = new System.Drawing.Point(38, 69);
             this.btnTotal.Name = "btnTotal";
             this.btnTotal.Size = new System.Drawing.Size(89, 34);
             this.btnTotal.TabIndex = 0;
@@ -1053,9 +1024,6 @@
         private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.ToolStripButton toolBtnPrint;
-        private System.Windows.Forms.ToolStripButton toolStripButton5;
-        private System.Windows.Forms.ToolStripButton toolStripButton6;
-        private System.Windows.Forms.ToolStripButton toolStripButton7;
         private System.Windows.Forms.ToolStripButton toolStripButton8;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;

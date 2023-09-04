@@ -159,6 +159,7 @@ namespace CafeMS
 
             lblTotal.Text = Convert.ToString((total));
 
+            lblSvcCharge.Text = String.Format("{0:C}", svcCharge);
             lblSubTotal.Text = String.Format("{0:C}", subTotal);
             lblTotal.Text = String.Format("{0:C}", total);
             lblDrinkCost.Text = String.Format("{0:C}", drinkCosts);
@@ -433,9 +434,9 @@ namespace CafeMS
         {
             rtbReceipt.Clear();
 
-            rtbReceipt.AppendText("-------------------------------------------------------" + Environment.NewLine);
+            rtbReceipt.AppendText("------------------------------------------------------------" + Environment.NewLine);
             rtbReceipt.AppendText("\t\t" + "My Cafe" + Environment.NewLine);
-            rtbReceipt.AppendText("-------------------------------------------------------" + Environment.NewLine);
+            rtbReceipt.AppendText("------------------------------------------------------------" + Environment.NewLine);
 
             if (txtLatte.Text != "0")
             {
@@ -507,13 +508,13 @@ namespace CafeMS
                 rtbReceipt.AppendText("Red Velvet Cake \t\t\t\t" + txtRedVelvetCake.Text + Environment.NewLine);
             }
             
-            rtbReceipt.AppendText("--------------------------------------------------------" + Environment.NewLine);
+            rtbReceipt.AppendText("-----------------------------------------------------------" + Environment.NewLine);
             rtbReceipt.AppendText("Service Charge \t\t\t\t" + lblSvcCharge.Text + Environment.NewLine);
-            rtbReceipt.AppendText("--------------------------------------------------------" + Environment.NewLine);
+            rtbReceipt.AppendText("-----------------------------------------------------------" + Environment.NewLine);
             rtbReceipt.AppendText("Tax \t\t\t\t\t" + lblTax.Text + Environment.NewLine);
             rtbReceipt.AppendText("Sub Total \t\t\t\t" + lblSubTotal.Text + Environment.NewLine);
             rtbReceipt.AppendText("Total Cost \t\t\t\t" + lblTotal.Text + Environment.NewLine);
-            rtbReceipt.AppendText("--------------------------------------------------------" + Environment.NewLine);
+            rtbReceipt.AppendText("-----------------------------------------------------------" + Environment.NewLine);
             // rtbReceipt.AppendText(lblTimer.Text + "\t" + lblDate.Text);
         }
 
@@ -605,7 +606,8 @@ namespace CafeMS
 
         private void toolBtnPrint_Click(object sender, EventArgs e)
         {
-            
+            printPreviewDialog1.Document = printDocument1;
+            printPreviewDialog1.ShowDialog();
         }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
@@ -621,6 +623,41 @@ namespace CafeMS
         private void printPreviewDialog1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            rtbReceipt.Clear();
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFile = new OpenFileDialog();
+
+            openFile.Filter = "Text Files (*.txt)|*.txt|All files (*.*)|*.*";
+            if (openFile.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                rtbReceipt.LoadFile(openFile.FileName, RichTextBoxStreamType.PlainText);
+            }
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFile = new SaveFileDialog();
+
+            saveFile.FileName = "Notepad Text";
+            saveFile.Filter = "Text Files (*.txt)|*.txt|All files (*.*)|*.*";
+
+            if (saveFile.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                using (System.IO.StreamWriter sw = new System.IO.StreamWriter(saveFile.FileName))
+                    sw.WriteLine(rtbReceipt.Text);
+            }
+        }
+
+        private void toolStripButton8_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("For enquiry, please send an email to nhatha22@gmail.com", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
