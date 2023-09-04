@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace CafeMS
 {
     public partial class Form1 : Form
@@ -70,26 +71,7 @@ namespace CafeMS
             txtChocolateCake.Enabled = false;
             txtRedVelvetCake.Enabled = false;
 
-            //chkLatte.Enabled = false;
-            //chkExpresso.Enabled = false;
-            //chkBlackCoffee.Enabled = false;
-            //chkOrangeJuice.Enabled = false;
-            //chkGreenTea.Enabled = false;
-            //chkMilkTea.Enabled = false;
-            //chkCappuchino.Enabled = false;
-            //chkHotChocolate.Enabled = false;
-            //chkWater.Enabled = false;
-            //chkMacchiato.Enabled = false;
-            //chkFries.Enabled = false;
-            //chkEggBites.Enabled = false;
-            //chkFishnChips.Enabled = false;
-            //chkOmmelette.Enabled = false;
-            //chkInstantNoodles.Enabled = false;
-            //chkCrssant.Enabled = false;
-            //chkCheeseCake.Enabled = false;
-            //chkRainbowCake.Enabled = false;
-            //chkChocolateCake.Enabled = false;
-            //chkRedVelvetCake.Enabled = false;
+            
 
 
 
@@ -454,38 +436,160 @@ namespace CafeMS
             rtbReceipt.AppendText("-------------------------------------------------------" + Environment.NewLine);
             rtbReceipt.AppendText("\t\t" + "My Cafe" + Environment.NewLine);
             rtbReceipt.AppendText("-------------------------------------------------------" + Environment.NewLine);
-            rtbReceipt.AppendText("Latte \t\t\t\t" + txtLatte.Text + Environment.NewLine);
-            rtbReceipt.AppendText("Black CF \t\t\t" + txtBlackCoffee.Text + Environment.NewLine);
-            rtbReceipt.AppendText("Expresso \t\t\t\t" + txtExpresso.Text + Environment.NewLine);
-            rtbReceipt.AppendText("Orange Juice \t\t\t" + txtOrangeJuice.Text + Environment.NewLine);
-            rtbReceipt.AppendText("Green Tea \t\t\t" + txtGreenTea.Text + Environment.NewLine);
-            rtbReceipt.AppendText("Milk Tea \t\t\t" + txtMilkTea.Text + Environment.NewLine);
-            rtbReceipt.AppendText("Cappuchino \t\t\t" + txtCappuchino.Text + Environment.NewLine);
-            rtbReceipt.AppendText("Hot Chocolate \t\t\t" + txtHotChocolate.Text + Environment.NewLine);
-            rtbReceipt.AppendText("Water \t\t" + txtWater.Text + Environment.NewLine);
-            rtbReceipt.AppendText("Macchiato \t\t" + txtMacchiato.Text + Environment.NewLine);
-            rtbReceipt.AppendText("Fries \t\t" + txtFries.Text + Environment.NewLine);
-            rtbReceipt.AppendText("Egg Bites \t\t" + txtEggBites.Text + Environment.NewLine);
-            rtbReceipt.AppendText("Fish and Chips \t\t" + txtFishnChips.Text + Environment.NewLine);
-            rtbReceipt.AppendText("Ommelette \t\t\t" + txtOmmelette.Text + Environment.NewLine);
-            rtbReceipt.AppendText("Instant Noodles \t\t\t" + txtInstantNoodles.Text + Environment.NewLine);
-            rtbReceipt.AppendText("Crssant \t\t\t" + txtCrssant.Text + Environment.NewLine);
-            rtbReceipt.AppendText("Cheese Cake \t\t\t" + txtCheeseCake.Text + Environment.NewLine);
-            rtbReceipt.AppendText("Rainbow Cake \t\t\t" + txtRainbowCake.Text + Environment.NewLine);
-            rtbReceipt.AppendText("Chocolate Cake \t\t\t" + txtChocolateCake.Text + Environment.NewLine);
-            rtbReceipt.AppendText("Red Velvet Cake \t\t\t" + txtRedVelvetCake.Text + Environment.NewLine);
-            rtbReceipt.AppendText("-------------------------------------------------------------" + Environment.NewLine);
-            rtbReceipt.AppendText("Service Charge \t\t" + lblSvcCharge.Text + Environment.NewLine);
-            rtbReceipt.AppendText("-------------------------------------------------------------" + Environment.NewLine);
-            rtbReceipt.AppendText("Tax \t\t\t\t" + lblTax.Text + Environment.NewLine);
-            rtbReceipt.AppendText("Sub Total \t\t\t" + lblSubTotal.Text + Environment.NewLine);
-            rtbReceipt.AppendText("Total Cost \t\t\t" + lblTotal.Text + Environment.NewLine);
-            rtbReceipt.AppendText("-------------------------------------------------------------" + Environment.NewLine);
+
+            if (txtLatte.Text != "0")
+            {
+                rtbReceipt.AppendText("Latte \t\t\t\t\t" + txtLatte.Text + Environment.NewLine);
+            }
+            if (txtBlackCoffee.Text != "0")
+            {
+                rtbReceipt.AppendText("Hot Chocolate \t\t\t\t" + txtHotChocolate.Text + Environment.NewLine);
+            }
+
+            if (txtWater.Text != "0")
+            {
+                rtbReceipt.AppendText("Water \t\t\t\t\t" + txtWater.Text + Environment.NewLine);
+            }
+            
+            if (txtMacchiato.Text != "0")
+            {
+                rtbReceipt.AppendText("Macchiato \t\t\t\t" + txtMacchiato.Text + Environment.NewLine);
+            }
+            
+            if (txtFries.Text != "0")
+            {
+                rtbReceipt.AppendText("Fries \t\t\t\t\t" + txtFries.Text + Environment.NewLine);
+            }    
+            
+            if (txtEggBites.Text != "0")
+            {
+                rtbReceipt.AppendText("Egg Bites \t\t\t\t" + txtEggBites.Text + Environment.NewLine);
+            }
+            
+            if (txtFishnChips.Text != "0")
+            {
+                rtbReceipt.AppendText("Fish and Chips \t\t\t\t" + txtFishnChips.Text + Environment.NewLine);
+            }
+            
+            if (txtOmmelette.Text != "0")
+            {
+                rtbReceipt.AppendText("Ommelette \t\t\t\t" + txtOmmelette.Text + Environment.NewLine);
+            }
+            
+            if (txtInstantNoodles.Text != "0")
+            {
+                rtbReceipt.AppendText("Instant Noodles \t\t\t\t" + txtInstantNoodles.Text + Environment.NewLine);
+            }
+
+            if (txtCrssant.Text != "0")
+            {
+
+                rtbReceipt.AppendText("Crssant \t\t\t\t\t" + txtCrssant.Text + Environment.NewLine);
+            }
+            
+            if (txtCheeseCake.Text != "0")
+            {
+                rtbReceipt.AppendText("Cheese Cake \t\t\t\t" + txtCheeseCake.Text + Environment.NewLine);
+            }
+
+            if (txtRainbowCake.Text != "0")
+            {
+                rtbReceipt.AppendText("Rainbow Cake \t\t\t\t" + txtRainbowCake.Text + Environment.NewLine);
+            }
+            
+            if (txtChocolateCake.Text != "0")
+            {
+                rtbReceipt.AppendText("Chocolate Cake \t\t\t\t" + txtChocolateCake.Text + Environment.NewLine);
+            }
+           
+            if (txtRedVelvetCake.Text != "0")
+            {
+                rtbReceipt.AppendText("Red Velvet Cake \t\t\t\t" + txtRedVelvetCake.Text + Environment.NewLine);
+            }
+            
+            rtbReceipt.AppendText("--------------------------------------------------------" + Environment.NewLine);
+            rtbReceipt.AppendText("Service Charge \t\t\t\t" + lblSvcCharge.Text + Environment.NewLine);
+            rtbReceipt.AppendText("--------------------------------------------------------" + Environment.NewLine);
+            rtbReceipt.AppendText("Tax \t\t\t\t\t" + lblTax.Text + Environment.NewLine);
+            rtbReceipt.AppendText("Sub Total \t\t\t\t" + lblSubTotal.Text + Environment.NewLine);
+            rtbReceipt.AppendText("Total Cost \t\t\t\t" + lblTotal.Text + Environment.NewLine);
+            rtbReceipt.AppendText("--------------------------------------------------------" + Environment.NewLine);
             // rtbReceipt.AppendText(lblTimer.Text + "\t" + lblDate.Text);
         }
 
         private void btnReset_Click(object sender, EventArgs e)
         {
+            // Set the default value for the TextBox
+            txtLatte.Text = "0";
+            txtBlackCoffee.Text = "0";
+            txtExpresso.Text = "0";
+            txtOrangeJuice.Text = "0";
+            txtGreenTea.Text = "0";
+            txtMilkTea.Text = "0";
+            txtCappuchino.Text = "0";
+            txtHotChocolate.Text = "0";
+            txtWater.Text = "0";
+            txtMacchiato.Text = "0";
+            txtFries.Text = "0";
+            txtEggBites.Text = "0";
+            txtFishnChips.Text = "0";
+            txtOmmelette.Text = "0";
+            txtInstantNoodles.Text = "0";
+            txtCrssant.Text = "0";
+            txtCheeseCake.Text = "0";
+            txtRainbowCake.Text = "0";
+            txtChocolateCake.Text = "0";
+            txtRedVelvetCake.Text = "0";
+
+            lblDrinkCost.Text = "0";
+            lblFoodCost.Text = "0";
+            lblSvcCharge.Text = "1.75";
+            lblSubTotal.Text = "0";
+            lblTax.Text = "0";
+            lblTotal.Text = "0";
+
+            txtLatte.Enabled = false;
+            txtExpresso.Enabled = false;
+            txtBlackCoffee.Enabled = false;
+            txtOrangeJuice.Enabled = false;
+            txtGreenTea.Enabled = false;
+            txtMilkTea.Enabled = false;
+            txtCappuchino.Enabled = false;
+            txtHotChocolate.Enabled = false;
+            txtWater.Enabled = false;
+            txtMacchiato.Enabled = false;
+            txtFries.Enabled = false;
+            txtEggBites.Enabled = false;
+            txtFishnChips.Enabled = false;
+            txtOmmelette.Enabled = false;
+            txtInstantNoodles.Enabled = false;
+            txtCrssant.Enabled = false;
+            txtCheeseCake.Enabled = false;
+            txtRainbowCake.Enabled = false;
+            txtChocolateCake.Enabled = false;
+            txtRedVelvetCake.Enabled = false;
+
+            chkLatte.Checked = false;
+            chkExpresso.Checked = false;
+            chkBlackCoffee.Checked = false;
+            chkOrangeJuice.Checked = false;
+            chkGreenTea.Checked = false;
+            chkMilkTea.Checked = false;
+            chkCappuchino.Checked = false;
+            chkHotChocolate.Checked = false;
+            chkWater.Checked = false;
+            chkMacchiato.Checked = false;
+            chkFries.Checked = false;
+            chkEggBites.Checked = false;
+            chkFishnChips.Checked = false;
+            chkOmmelette.Checked = false;
+            chkInstantNoodles.Checked = false;
+            chkCrssant.Checked = false;
+            chkCheeseCake.Checked = false;
+            chkRainbowCake.Checked = false;
+            chkChocolateCake.Checked = false;
+            chkRedVelvetCake.Checked = false;
+
 
         }
 
@@ -499,8 +603,24 @@ namespace CafeMS
 
         }
 
-      
+        private void toolBtnPrint_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
 
 
+            if (e.Graphics != null)
+            {
+                e.Graphics.DrawString(rtbReceipt.Text, new Font("Arial", 14, FontStyle.Regular), Brushes.Black, 120, 120);
+            }
+        }
+
+        private void printPreviewDialog1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
