@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtMacchiato = new System.Windows.Forms.TextBox();
             this.txtWater = new System.Windows.Forms.TextBox();
@@ -104,7 +102,7 @@
             this.btnTotal = new System.Windows.Forms.Button();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            this.panel1.SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -113,25 +111,6 @@
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(3, 6);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1470, 156);
-            this.panel1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(303, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(950, 141);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Cafe Billing System";
             // 
             // panel2
             // 
@@ -156,9 +135,9 @@
             this.panel2.Controls.Add(this.chkOrangeJuice);
             this.panel2.Controls.Add(this.chkBlackCoffee);
             this.panel2.Controls.Add(this.chkLatte);
-            this.panel2.Location = new System.Drawing.Point(3, 168);
+            this.panel2.Location = new System.Drawing.Point(504, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(468, 439);
+            this.panel2.Size = new System.Drawing.Size(468, 459);
             this.panel2.TabIndex = 1;
             // 
             // txtMacchiato
@@ -233,13 +212,13 @@
             // 
             // label3
             // 
-            this.label3.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.label3.BackColor = System.Drawing.Color.RosyBrown;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Location = new System.Drawing.Point(3, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(485, 51);
+            this.label3.Size = new System.Drawing.Size(462, 51);
             this.label3.TabIndex = 20;
             this.label3.Text = "Drink";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -387,9 +366,9 @@
             this.panel3.Controls.Add(this.chkOmmelette);
             this.panel3.Controls.Add(this.chkEggBites);
             this.panel3.Controls.Add(this.chkFries);
-            this.panel3.Location = new System.Drawing.Point(500, 168);
+            this.panel3.Location = new System.Drawing.Point(978, 12);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(461, 439);
+            this.panel3.Size = new System.Drawing.Size(461, 456);
             this.panel3.TabIndex = 1;
             // 
             // txtRedVelvetCake
@@ -450,13 +429,13 @@
             // 
             // label2
             // 
-            this.label2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.label2.BackColor = System.Drawing.Color.RosyBrown;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(514, 51);
+            this.label2.Size = new System.Drawing.Size(458, 51);
             this.label2.TabIndex = 1;
             this.label2.Text = "Food";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -603,9 +582,9 @@
             this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(3, 613);
+            this.panel4.Location = new System.Drawing.Point(504, 474);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(491, 170);
+            this.panel4.Size = new System.Drawing.Size(465, 170);
             this.panel4.TabIndex = 1;
             // 
             // lblSvcCharge
@@ -616,7 +595,7 @@
             this.lblSvcCharge.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lblSvcCharge.Location = new System.Drawing.Point(256, 118);
             this.lblSvcCharge.Name = "lblSvcCharge";
-            this.lblSvcCharge.Size = new System.Drawing.Size(221, 45);
+            this.lblSvcCharge.Size = new System.Drawing.Size(204, 45);
             this.lblSvcCharge.TabIndex = 26;
             this.lblSvcCharge.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -628,7 +607,7 @@
             this.lblFoodCost.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lblFoodCost.Location = new System.Drawing.Point(257, 69);
             this.lblFoodCost.Name = "lblFoodCost";
-            this.lblFoodCost.Size = new System.Drawing.Size(221, 45);
+            this.lblFoodCost.Size = new System.Drawing.Size(203, 45);
             this.lblFoodCost.TabIndex = 25;
             this.lblFoodCost.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -640,7 +619,7 @@
             this.lblDrinkCost.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lblDrinkCost.Location = new System.Drawing.Point(257, 17);
             this.lblDrinkCost.Name = "lblDrinkCost";
-            this.lblDrinkCost.Size = new System.Drawing.Size(221, 45);
+            this.lblDrinkCost.Size = new System.Drawing.Size(203, 45);
             this.lblDrinkCost.TabIndex = 24;
             this.lblDrinkCost.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -687,13 +666,17 @@
             // 
             this.panel5.Controls.Add(this.toolStrip1);
             this.panel5.Controls.Add(this.rtbReceipt);
-            this.panel5.Location = new System.Drawing.Point(967, 168);
+            this.panel5.Location = new System.Drawing.Point(-8, 179);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(506, 439);
+            this.panel5.Size = new System.Drawing.Size(503, 604);
             this.panel5.TabIndex = 1;
             // 
             // toolStrip1
             // 
+            this.toolStrip1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
@@ -703,7 +686,7 @@
             this.toolStripButton8});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(506, 33);
+            this.toolStrip1.Size = new System.Drawing.Size(188, 33);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -761,7 +744,7 @@
             // 
             this.rtbReceipt.Location = new System.Drawing.Point(11, 57);
             this.rtbReceipt.Name = "rtbReceipt";
-            this.rtbReceipt.Size = new System.Drawing.Size(483, 367);
+            this.rtbReceipt.Size = new System.Drawing.Size(474, 544);
             this.rtbReceipt.TabIndex = 0;
             this.rtbReceipt.Text = "";
             this.rtbReceipt.TextChanged += new System.EventHandler(this.rtbReceipt_TextChanged);
@@ -774,17 +757,17 @@
             this.panel6.Controls.Add(this.label13);
             this.panel6.Controls.Add(this.label14);
             this.panel6.Controls.Add(this.label15);
-            this.panel6.Location = new System.Drawing.Point(500, 613);
+            this.panel6.Location = new System.Drawing.Point(978, 474);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(461, 170);
             this.panel6.TabIndex = 1;
             // 
             // lblTotal
             // 
-            this.lblTotal.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblTotal.BackColor = System.Drawing.Color.Salmon;
             this.lblTotal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblTotal.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTotal.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lblTotal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblTotal.Location = new System.Drawing.Point(255, 118);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(162, 45);
@@ -797,7 +780,7 @@
             this.lblSubTotal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblSubTotal.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblSubTotal.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblSubTotal.Location = new System.Drawing.Point(256, 69);
+            this.lblSubTotal.Location = new System.Drawing.Point(256, 17);
             this.lblSubTotal.Name = "lblSubTotal";
             this.lblSubTotal.Size = new System.Drawing.Size(161, 45);
             this.lblSubTotal.TabIndex = 31;
@@ -809,7 +792,7 @@
             this.lblTax.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblTax.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblTax.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblTax.Location = new System.Drawing.Point(256, 17);
+            this.lblTax.Location = new System.Drawing.Point(256, 73);
             this.lblTax.Name = "lblTax";
             this.lblTax.Size = new System.Drawing.Size(161, 45);
             this.lblTax.TabIndex = 30;
@@ -834,7 +817,7 @@
             this.label14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label14.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label14.Location = new System.Drawing.Point(18, 69);
+            this.label14.Location = new System.Drawing.Point(18, 16);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(221, 45);
             this.label14.TabIndex = 28;
@@ -847,7 +830,7 @@
             this.label15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label15.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label15.Location = new System.Drawing.Point(18, 16);
+            this.label15.Location = new System.Drawing.Point(18, 69);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(221, 45);
             this.label15.TabIndex = 27;
@@ -856,18 +839,19 @@
             // 
             // panel7
             // 
+            this.panel7.BackColor = System.Drawing.Color.Gray;
             this.panel7.Controls.Add(this.btnExit);
             this.panel7.Controls.Add(this.btnReset);
             this.panel7.Controls.Add(this.btnReceipt);
             this.panel7.Controls.Add(this.btnTotal);
-            this.panel7.Location = new System.Drawing.Point(967, 613);
+            this.panel7.Location = new System.Drawing.Point(504, 650);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(506, 170);
+            this.panel7.Size = new System.Drawing.Size(935, 170);
             this.panel7.TabIndex = 1;
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(379, 69);
+            this.btnExit.Location = new System.Drawing.Point(598, 47);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(89, 34);
             this.btnExit.TabIndex = 3;
@@ -877,7 +861,7 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(266, 69);
+            this.btnReset.Location = new System.Drawing.Point(485, 47);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(89, 34);
             this.btnReset.TabIndex = 2;
@@ -887,7 +871,7 @@
             // 
             // btnReceipt
             // 
-            this.btnReceipt.Location = new System.Drawing.Point(152, 69);
+            this.btnReceipt.Location = new System.Drawing.Point(371, 47);
             this.btnReceipt.Name = "btnReceipt";
             this.btnReceipt.Size = new System.Drawing.Size(89, 34);
             this.btnReceipt.TabIndex = 1;
@@ -897,7 +881,7 @@
             // 
             // btnTotal
             // 
-            this.btnTotal.Location = new System.Drawing.Point(38, 69);
+            this.btnTotal.Location = new System.Drawing.Point(257, 47);
             this.btnTotal.Name = "btnTotal";
             this.btnTotal.Size = new System.Drawing.Size(89, 34);
             this.btnTotal.TabIndex = 0;
@@ -920,21 +904,33 @@
             this.printPreviewDialog1.Visible = false;
             this.printPreviewDialog1.Load += new System.EventHandler(this.printPreviewDialog1_Load);
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(12, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(483, 167);
+            this.label1.TabIndex = 60;
+            this.label1.Text = "Billing Management";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1485, 795);
+            this.ClientSize = new System.Drawing.Size(1451, 795);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Name = "Form1";
-            this.Text = "Form1";
-            this.panel1.ResumeLayout(false);
+            this.Text = "Billing Management";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -951,15 +947,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox chkLatte;
         private System.Windows.Forms.CheckBox chkHotChocolate;
         private System.Windows.Forms.CheckBox chkWater;
@@ -1027,5 +1020,6 @@
         private System.Windows.Forms.ToolStripButton toolStripButton8;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Windows.Forms.Label label1;
     }
 }
