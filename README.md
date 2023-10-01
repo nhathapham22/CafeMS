@@ -48,8 +48,8 @@ Cafe Management System
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
+        <li><a href="#exefile">EXE File</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -100,6 +100,9 @@ To get started with the Cafe Management System, follow these steps:
    ```
 2. Open the solution file in your preferred Integrated Development Environment (IDE).
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### EXE File
+If you want to download the installation file to experience the program, please download using the below link: 
 
 
 
