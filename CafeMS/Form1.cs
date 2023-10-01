@@ -159,7 +159,7 @@ namespace CafeMS
 
             lblTotal.Text = Convert.ToString((total));
 
-            lblSvcCharge.Text = String.Format("{0:C}", svcCharge);
+            //lblSvcCharge.Text = String.Format("{0:C}", svcCharge);
             lblSubTotal.Text = String.Format("{0:C}", subTotal);
             lblTotal.Text = String.Format("{0:C}", total);
             lblDrinkCost.Text = String.Format("{0:C}", drinkCosts);
