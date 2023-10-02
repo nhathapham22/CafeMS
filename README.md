@@ -122,9 +122,9 @@ Once the project is set up, you can use the system to manage orders, calculate c
 
 The following features and improvements are planned for future releases:
 
-Enhanced user interface
-Integration with external payment systems
-Customer loyalty program
+* Enhanced user interface
+* Integration with external payment systems
+* Customer loyalty program
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
