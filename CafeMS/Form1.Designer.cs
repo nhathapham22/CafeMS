@@ -742,9 +742,9 @@
             // 
             // rtbReceipt
             // 
-            this.rtbReceipt.Location = new System.Drawing.Point(11, 57);
+            this.rtbReceipt.Location = new System.Drawing.Point(20, 36);
             this.rtbReceipt.Name = "rtbReceipt";
-            this.rtbReceipt.Size = new System.Drawing.Size(474, 544);
+            this.rtbReceipt.Size = new System.Drawing.Size(483, 544);
             this.rtbReceipt.TabIndex = 0;
             this.rtbReceipt.Text = "";
             this.rtbReceipt.TextChanged += new System.EventHandler(this.rtbReceipt_TextChanged);

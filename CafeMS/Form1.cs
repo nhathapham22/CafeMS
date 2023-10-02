@@ -434,87 +434,111 @@ namespace CafeMS
         {
             rtbReceipt.Clear();
 
-            rtbReceipt.AppendText("------------------------------------------------------------" + Environment.NewLine);
-            rtbReceipt.AppendText("\t\t" + "My Cafe" + Environment.NewLine);
-            rtbReceipt.AppendText("------------------------------------------------------------" + Environment.NewLine);
+            rtbReceipt.AppendText("---------------------------------------------------------------" + Environment.NewLine);
+            rtbReceipt.AppendText("\t\t\t" + "My Cafe" + Environment.NewLine);
+            rtbReceipt.AppendText("---------------------------------------------------------------" + Environment.NewLine);
 
             if (txtLatte.Text != "0")
             {
-                rtbReceipt.AppendText("Latte \t\t\t\t\t" + txtLatte.Text + Environment.NewLine);
+                rtbReceipt.AppendText("   Latte \t\t\t\t\t" + txtLatte.Text + Environment.NewLine);
             }
             if (txtBlackCoffee.Text != "0")
             {
-                rtbReceipt.AppendText("Hot Chocolate \t\t\t\t" + txtHotChocolate.Text + Environment.NewLine);
+                rtbReceipt.AppendText("   BlackCoffee \t\t\t\t" + txtBlackCoffee.Text + Environment.NewLine);
             }
-
+            if (txtExpresso.Text != "0")
+            {
+                rtbReceipt.AppendText("   Expresso \t\t\t\t" + txtExpresso.Text + Environment.NewLine);
+            }
+            if (txtOrangeJuice.Text != "0")
+            {
+                rtbReceipt.AppendText("   Orange Juice \t\t\t\t" + txtOrangeJuice.Text + Environment.NewLine);
+            }
+            if (txtGreenTea.Text != "0")
+            {
+                rtbReceipt.AppendText("   Green Tea \t\t\t\t" + txtGreenTea.Text + Environment.NewLine);
+            }
+            if (txtMilkTea.Text != "0")
+            {
+                rtbReceipt.AppendText("   Milk Tea \t\t\t\t" + txtMilkTea.Text + Environment.NewLine);
+            }
             if (txtWater.Text != "0")
             {
-                rtbReceipt.AppendText("Water \t\t\t\t\t" + txtWater.Text + Environment.NewLine);
+                rtbReceipt.AppendText("   Water \t\t\t\t" + txtWater.Text + Environment.NewLine);
             }
-            
+            if (txtHotChocolate.Text != "0")
+            {
+                rtbReceipt.AppendText("   Hot Chocolate \t\t\t\t" + txtHotChocolate.Text + Environment.NewLine);
+            }
+
             if (txtMacchiato.Text != "0")
             {
-                rtbReceipt.AppendText("Macchiato \t\t\t\t" + txtMacchiato.Text + Environment.NewLine);
+                rtbReceipt.AppendText("   Macchiato \t\t\t\t" + txtMacchiato.Text + Environment.NewLine);
             }
-            
+
+            if (txtCappuchino.Text != "0")
+            {
+                rtbReceipt.AppendText("   Cappuchino \t\t\t\t" + txtCappuchino.Text + Environment.NewLine);
+            }
+
             if (txtFries.Text != "0")
             {
-                rtbReceipt.AppendText("Fries \t\t\t\t\t" + txtFries.Text + Environment.NewLine);
+                rtbReceipt.AppendText("   Fries \t\t\t\t" + txtFries.Text + Environment.NewLine);
             }    
             
             if (txtEggBites.Text != "0")
             {
-                rtbReceipt.AppendText("Egg Bites \t\t\t\t" + txtEggBites.Text + Environment.NewLine);
+                rtbReceipt.AppendText("   Egg Bites \t\t\t\t" + txtEggBites.Text + Environment.NewLine);
             }
             
             if (txtFishnChips.Text != "0")
             {
-                rtbReceipt.AppendText("Fish and Chips \t\t\t\t" + txtFishnChips.Text + Environment.NewLine);
+                rtbReceipt.AppendText("   Fish and Chips \t\t\t\t" + txtFishnChips.Text + Environment.NewLine);
             }
             
             if (txtOmmelette.Text != "0")
             {
-                rtbReceipt.AppendText("Ommelette \t\t\t\t" + txtOmmelette.Text + Environment.NewLine);
+                rtbReceipt.AppendText("   Ommelette \t\t\t\t" + txtOmmelette.Text + Environment.NewLine);
             }
             
             if (txtInstantNoodles.Text != "0")
             {
-                rtbReceipt.AppendText("Instant Noodles \t\t\t\t" + txtInstantNoodles.Text + Environment.NewLine);
+                rtbReceipt.AppendText("   Instant Noodles \t\t\t\t" + txtInstantNoodles.Text + Environment.NewLine);
             }
 
             if (txtCrssant.Text != "0")
             {
 
-                rtbReceipt.AppendText("Crssant \t\t\t\t\t" + txtCrssant.Text + Environment.NewLine);
+                rtbReceipt.AppendText("   Crssant \t\t\t\t" + txtCrssant.Text + Environment.NewLine);
             }
             
             if (txtCheeseCake.Text != "0")
             {
-                rtbReceipt.AppendText("Cheese Cake \t\t\t\t" + txtCheeseCake.Text + Environment.NewLine);
+                rtbReceipt.AppendText("   Cheese Cake \t\t\t\t" + txtCheeseCake.Text + Environment.NewLine);
             }
 
             if (txtRainbowCake.Text != "0")
             {
-                rtbReceipt.AppendText("Rainbow Cake \t\t\t\t" + txtRainbowCake.Text + Environment.NewLine);
+                rtbReceipt.AppendText("   Rainbow Cake \t\t\t\t" + txtRainbowCake.Text + Environment.NewLine);
             }
             
             if (txtChocolateCake.Text != "0")
             {
-                rtbReceipt.AppendText("Chocolate Cake \t\t\t\t" + txtChocolateCake.Text + Environment.NewLine);
+                rtbReceipt.AppendText("   Chocolate Cake \t\t\t\t" + txtChocolateCake.Text + Environment.NewLine);
             }
            
             if (txtRedVelvetCake.Text != "0")
             {
-                rtbReceipt.AppendText("Red Velvet Cake \t\t\t\t" + txtRedVelvetCake.Text + Environment.NewLine);
+                rtbReceipt.AppendText("   Red Velvet Cake \t\t\t\t" + txtRedVelvetCake.Text + Environment.NewLine);
             }
             
-            rtbReceipt.AppendText("-----------------------------------------------------------" + Environment.NewLine);
-            rtbReceipt.AppendText("Service Charge \t\t\t\t" + lblSvcCharge.Text + Environment.NewLine);
-            rtbReceipt.AppendText("-----------------------------------------------------------" + Environment.NewLine);
-            rtbReceipt.AppendText("Tax \t\t\t\t\t" + lblTax.Text + Environment.NewLine);
-            rtbReceipt.AppendText("Sub Total \t\t\t\t" + lblSubTotal.Text + Environment.NewLine);
-            rtbReceipt.AppendText("Total Cost \t\t\t\t" + lblTotal.Text + Environment.NewLine);
-            rtbReceipt.AppendText("-----------------------------------------------------------" + Environment.NewLine);
+            rtbReceipt.AppendText("--------------------------------------------------------------" + Environment.NewLine);
+            rtbReceipt.AppendText("   Service Charge \t\t\t\t" + lblSvcCharge.Text + Environment.NewLine);
+            rtbReceipt.AppendText("--------------------------------------------------------------" + Environment.NewLine);
+            rtbReceipt.AppendText("   Sub Total \t\t\t\t" + lblSubTotal.Text + Environment.NewLine);
+            rtbReceipt.AppendText("   Tax \t\t\t\t\t" + lblTax.Text + Environment.NewLine);
+            rtbReceipt.AppendText("   Total Cost \t\t\t\t" + lblTotal.Text + Environment.NewLine);
+            rtbReceipt.AppendText("--------------------------------------------------------------" + Environment.NewLine);
             // rtbReceipt.AppendText(lblTimer.Text + "\t" + lblDate.Text);
         }
 
