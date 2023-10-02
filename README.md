@@ -1,5 +1,4 @@
 # CafeMS
-Cafe Management System
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
 <!--
@@ -49,7 +48,7 @@ Cafe Management System
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#installation">Installation</a></li>
-        <li><a href="#exefile">EXE File</a></li>
+        <li><a href="#exefile">Portable Program</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -78,8 +77,7 @@ This project is a cafe management system designed to streamline the operations o
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
+This project was built with:
 * [.NET](https://dotnet.microsoft.com/)
 * [C#](https://docs.microsoft.com/en-us/dotnet/csharp/)
 
@@ -101,8 +99,9 @@ To get started with the Cafe Management System, follow these steps:
 2. Open the solution file in your preferred Integrated Development Environment (IDE).
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### EXE File
-If you want to download the installation file to experience the program, please download using the below link: 
+### Portable Program
+If you want to run the program directly, please go to the folder of the project: 
+CafeMS\bin\Release\net5.0-windows and then click on CafeMS.exe to run the file.
 
 
 
@@ -121,11 +120,9 @@ Once the project is set up, you can use the system to manage orders, calculate c
 
 The following features and improvements are planned for future releases:
 
-Enhanced user interface
-Integration with external payment systems
-Customer loyalty program
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+* Enhanced user interface
+* Integration with external payment systems
+* Customer loyalty program
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -167,7 +164,7 @@ Special thanks to:
 
 * [.NET](https://dotnet.microsoft.com/)
 * [C#](https://docs.microsoft.com/en-us/dotnet/csharp/)
-* [Code Project](https://code-projects.org/))
+* [Code Project](https://code-projects.org/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
