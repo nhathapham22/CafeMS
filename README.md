@@ -29,7 +29,7 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#installation">Installation</a></li>
-        <li><a href="#exefile">Portable Program</a></li>
+        <li><a href="#portable-program">Portable Program</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
